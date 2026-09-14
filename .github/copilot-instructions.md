@@ -1,0 +1,4 @@
+Before implementing any code, ask 3 clarifying questions to make the requirements more complete 
+Based on the user requirement, create a SPEC.MD to write a detailed specification and ask user for comments
+Based on the updated requirement, create the code and ask the user for a comment. • When the user provides feedback about the app, modify the SPEC.MD before making changes to the code.
+Record in a file “LESSONS_LEARNT.MD” to record the user preference and mistakes you have made, and how you can do better next time

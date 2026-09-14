@@ -1,0 +1,15 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.venv/
+__pycache__/
+*.pyc
+backend/*.sqlite3
+.env
+.env.*
+patient-data/
+patient-videos/
+recordings/
+raw-frames/
+clinical-datasets/
+models/

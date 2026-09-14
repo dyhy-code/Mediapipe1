@@ -1,0 +1,172 @@
+# Clinical Ground Truth Template
+
+## 1. Recording Metadata
+
+- Recording ID:
+- Participant ID:
+- Therapist / assessor:
+- Date:
+- Camera device:
+- Camera resolution:
+- Camera frame rate:
+- Camera position:
+- Patient side facing camera:
+- Exercise:
+- Cloth stick type:
+- Lighting condition:
+- Background condition:
+
+## 2. Participant Information
+
+- Age:
+- Sex:
+- Dominant hand:
+- Affected side:
+- Diagnosis category:
+- Shoulder limitation:
+- Elbow limitation:
+- Exclusion criteria:
+- Clinical notes:
+
+## 3. Reference Measurement Method
+
+- Reference measurement device:
+- Reference assessor:
+- Measurement protocol:
+- Reference coordinate system:
+- Reference angle definition:
+- Measurement accuracy:
+- Calibration procedure:
+- Synchronization method:
+- Ground-truth source:
+
+## 4. Right Shoulder Flexion
+
+- Starting angle:
+- Target angle:
+- Maximum safe angle:
+- Reference maximum angle:
+- AI-estimated maximum angle:
+- Absolute error in degrees:
+- Relative error percentage:
+- Pass threshold:
+- Starting position valid:
+- Target position reached:
+- Unsafe angle reached:
+
+Per-frame or key-frame annotation:
+
+| Timestamp | Upper-arm reference angle | AI angle | Absolute error | Confidence | Valid frame |
+|---|---:|---:|---:|---:|---|
+
+## 5. Right Elbow Extension
+
+- Required final angle:
+- Allowed error:
+- Reference final angle:
+- AI-estimated final angle:
+- Final condition passed:
+- Timestamp of final-position check:
+
+| Timestamp | Reference elbow angle | AI elbow angle | Error | Condition passed |
+|---|---:|---:|---:|---:|
+
+## 6. Left Trunk Leaning
+
+- Measurement method:
+- Trunk centerline landmarks:
+- Neutral trunk reference:
+- Left-lean threshold:
+  <10°       NONE
+  10–<25°    WARNING
+  25–<40°    MODERATE
+  >=40°      SEVERE
+- Start timestamp:
+- End timestamp:
+- Therapist label:
+- AI detection:
+- False positive:
+- False negative:
+
+## 7. Shoulder Abduction
+
+- Measurement method:
+- Shoulder pivot:
+- Upper-arm landmarks:
+- Normal flexion plane:
+- Shoulder abduction threshold:
+  <30°       NONE
+  30–<45°    WARNING
+  45–<50°    MODERATE
+  >=50°      SEVERE
+- Start timestamp:
+- End timestamp:
+- Therapist label:
+- AI detection:
+- False positive:
+- False negative:
+
+## 8. Repetition Annotation
+
+- Set number:
+- Repetition number:
+- Start position confirmed:
+- Movement start timestamp:
+- Peak shoulder flexion timestamp:
+- Hold start timestamp:
+- Hold duration: 5 seconds
+- Return timestamp:
+- Repetition valid:
+- Invalid reason:
+- Therapist comment:
+
+## 9. Cloth Stick and Hand Interaction
+
+- Cloth stick visible:
+- Cloth stick detected:
+- Right-hand holding confirmed:
+- Object confidence:
+- Object occluded:
+- Object dropped:
+- Object position valid:
+- Therapist confirmation required:
+
+## 10. Movement Speed
+
+- Total repetition duration: 7–15 seconds
+- Minimum duration: 7 seconds included
+- Maximum duration: 15 seconds included
+- Hold duration: 5 seconds
+- Movement phase: remaining 2–10 seconds
+- Speed compliance rule:
+- Measured duration:
+- Speed valid:
+
+## 11. Clinical Adjudication
+
+- Overall repetition valid:
+- ROM measurement valid:
+- Compensation present:
+- Compensation type:
+- Compensation severity:
+- Safety concern:
+- Therapist final decision:
+- Reason for disagreement with AI:
+- Additional notes:
+
+## 12. Validation Summary
+
+- Number of repetitions:
+- Valid repetitions:
+- Invalid repetitions:
+- Mean shoulder-angle error:
+- Maximum shoulder-angle error:
+- Percentage within +/-5%:
+- Elbow-condition accuracy:
+- Trunk-lean sensitivity:
+- Trunk-lean specificity:
+- Shoulder-abduction sensitivity:
+- Shoulder-abduction specificity:
+- False-warning rate:
+- Missed-error rate:
+- Average feedback latency:
